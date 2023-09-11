@@ -14,6 +14,7 @@ def index():
         team = request.form.get("team")
         what = request.form.get("what")
         #test
+        #test2
 
         # Spring Boot 서버로 POST 요청을 보냅니다.
         response = requests.post(SPRING_BOOT_URL, data={"team": team, "what": what})
