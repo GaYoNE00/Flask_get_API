@@ -13,6 +13,7 @@ def index():
         # HTML 폼에서 입력한 데이터를 가져옵니다.
         team = request.form.get("team")
         what = request.form.get("what")
+        #test
 
         # Spring Boot 서버로 POST 요청을 보냅니다.
         response = requests.post(SPRING_BOOT_URL, data={"team": team, "what": what})
